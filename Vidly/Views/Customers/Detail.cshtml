@@ -1,0 +1,22 @@
+﻿@model Vidly.Models.Customer
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Customer</h2>
+
+<div>
+    <h4>@Model.Name</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Name</dt>
+        <dd>@Html.DisplayFor(model => model.Name)</dd>
+        <dt>Birthdate</dt>
+        <dd>@(Model.Birthdate == null ? "-" : Model.Birthdate.Value.ToShortDateString()) </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
