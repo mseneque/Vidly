@@ -7,6 +7,9 @@
 *.userosscache
 *.sln.docstates
 
+## Ignore Connection Strings config file (contains server, user and pass) ##
+connections.config
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
